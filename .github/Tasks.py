@@ -1,50 +1,76 @@
-birthyear: int = 2001
-Currentyear: int = 2024
-age = birthyear - Currentyear
-print (age)
+#print(Calculate your age based on the current year and your birth year)
+def Myage (birthyear:int, currentyear:int):
+    age = birthyear - currentyear
+    return age
+result = Myage(2001,2024)
+print (result)
 
-Length_of_rectangle: int = 8
-Width_of_rectangle: int = 5
-area = Length_of_rectangle * Width_of_rectangle
-print (area)
+#print(Write a program that calculates the area of a rectangle using length and width variables)
+def Rectangle_area (length:int, width:int):
+    area = length*width
+    return area
+result = Rectangle_area(8,5)
+print (result)
 
-π: float = 3.14
-Radius: int = 7
-Area_of_circle = π * Radius ** 2 
-print (Area_of_circle)
+#print(Write a program that calculates the area of a circle)
+def circle_area (π:int, radius:int):
+    area = π * radius ** 2 
+    return area
+result = circle_area(3.14,7)
+print (result)
 
-Side: int = 4
-Area_of_cube = 6 * Side ** 2
-print (Area_of_cube)
+#print(Write a program that calculates the area of the cube.)
+def cube_area (side:int):
+    area = 6 * side ** 2
+    return area
+result = cube_area(4)
+print (result)
 
-Fahrenheit: float = 98.6
-Celsius = Fahrenheit - 32 * 5 / 9
-print (Celsius)
+#print(Create a program that converts a temperature from Fahrenheit to Celsius and vice versa using a variable)
+def convert_temperature(fahrenheit:float):
+    celsius = fahrenheit - 32 * 5 / 9
+    return celsius
+result = convert_temperature(98.6)
+print (result)
 
-Celsius2: int = 37
-Fahrenheit2 = Celsius2 * 9 / 5 + 32
-print (Fahrenheit2)
+def temperature_conversion(celsius:int):
+    fahrenheit = celsius * 9 / 5 + 32
+    return fahrenheit
+result = temperature_conversion(37)
+print (result)
 
-totalseconds: int = 500
-minutes = totalseconds // 60
-remaining_seconds = totalseconds % 60
-print (minutes)
-print (remaining_seconds)
+#print(Convert a given number of seconds into minutes and seconds using variables)
+def total_minutes(seconds: int):
+    minutes = seconds // 60
+    return minutes
+result = total_minutes(500)
+print(result)
 
-obtained_marks: int = 769
-total_marks: int = 1100
-percentage_value = (obtained_marks / total_marks) * 100
-print (percentage_value)
+def left_seconds(total_seconds: int):
+    remaining_seconds = total_seconds % 60
+    return remaining_seconds
+result = left_seconds(500)
+print(result)
 
-weight: int = 64
-height: float = 1.62
-BMI = weight / height ** 2
-print (BMI)
+#print(Write a program that calculates the percentage)
+def calculate_percentage(obtained_marks: int, total_marks: int):
+    percentage_value = (obtained_marks / total_marks) * 100
+    return percentage_value
+result = calculate_percentage(759, 1100)
+print (result)
 
-π: float = 3.14
-radius1: int = 3
-height1: int = 5
-Volume = π * radius1 ** 2 * height1
-print (Volume)
+#print(Write a program that calculates the BMI using height and weight variables)
+def MyBMI(weight:int, height:float):
+    BMI = weight / height ** 2
+    return BMI
+result = MyBMI(64, 1.62)
+print(result)
+
+#print(Write a program that calculates the volume of a cylinder using the formula)
+def cylinder_volume(π: float, radius1: int, height1: int):
+    Volume = π * radius1 ** 2 * height1
+    return Volume
+result= cylinder_volume(3.14, 3, 5)
+print (result)
 
 
